@@ -1,0 +1,4 @@
+Manufacturer: Intel
+Product: CL400X
+Version: 777986
+SNO: 1ncy

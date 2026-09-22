@@ -1,0 +1,24 @@
+import pytest
+from playwright.sync_api import Playwright,sync_playwright,expect
+
+def test_videorecording(playwright: Playwright):
+    browser=playwright.chromium.launch(headless=False)
+    context=browser.new_context(
+        record_video_dir="Videos/",
+        record_video_size={"width":1024,"height":768}
+    )
+    page=context.new_page()
+    page.goto("https://www.demoblaze.com/")
+    page.locator('#login2').click()
+    page.locator('#loginusername').fill("Saikrishna")
+    page.locator('#loginpassword').fill("Scaleio123!")
+    page.get_by_role("button",name="Log in").click()
+    page.wait_for_timeout(5000)
+    expect(page.locator('#logout2')).to_be_visible()
+    expect(page.locator('#nameofuser')).to_contain_text("Welcome Saikrishna")
+
+    context.close()
+    browser.close()
+
+
+

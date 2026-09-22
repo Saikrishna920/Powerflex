@@ -1,0 +1,25 @@
+Command to install playwright:
+
+1.pip install pytest-playwright
+
+2.playwright install  ----> It will install browser Instances (chrome,edge,firefox)
+ it will use the default chromium browser.
+
+==============================================================================
+ Locators:
+ 1. playwright built in locators (Has some limitations) ---> specific to PW only
+ 2. CSS
+ 3.X-paths
+ ###########################################
+ Built in locators:
+ ###########################################
+ 1.page.get_by_role()
+ 2.page.get_by_text()
+ 3.page.get_by_placeholder()
+ 4.page.get_by_label()
+ 5.page.get_by_alt_text()
+ 6.page.get_by_title()
+ 7.page.get_by_test_id()
+
+
+

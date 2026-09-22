@@ -1,0 +1,3 @@
+windows operator 24.6 Nov10
+window operator 79.72 Dec24
+UNIX 32.24 Dec10
