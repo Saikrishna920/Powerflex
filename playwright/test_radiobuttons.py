@@ -7,11 +7,11 @@ def test_radio_buttons(page:Page):
 
     male_radio=page.locator("#male")
 
-    # visibility of teh element and enable or not
+    # visibility of the element and enable or not
     expect(male_radio).to_be_visible()
     expect(male_radio).to_be_enabled()
 
-    # Male radio button should not be checked ( default)
+    # Male radio button should not be checked (default)
     expect(male_radio).not_to_be_checked()
 
     # Select/Check radio button - action

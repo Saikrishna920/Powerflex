@@ -3,7 +3,7 @@ from tkinter.font import names
 import pytest
 from playwright.sync_api import sync_playwright,Page,expect
 
-def test_mouse_actions(page: Page):
+def test_mouse_hover(page: Page):
     page.goto("https://www.sreenidhirajakrishnan.com/practice")
     page.locator("#hover-menu-trigger").hover()
     page.wait_for_timeout(5000)

@@ -5,10 +5,10 @@ def test_keyboard_actions(page: Page):
     page.goto("https://testautomationpractice.blogspot.com/")
     input1=page.locator("#input1")
 
-    #1. focus on input1
+    #1. focus on input1 box
     input1.focus()
 
-    #2. provide the text in input1
+    #2. provide the text in input1 using keyboard method
     page.keyboard.insert_text("Hello")
 
     #3.ctrl+A

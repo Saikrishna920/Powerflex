@@ -1,5 +1,6 @@
 import pytest
-@pytest.fixture(scope="function")  # so, by default scope will take function
+@pytest.fixture(scope="module")  # so, by default scope will take function
+@pytest.fixture(scope="module")  # so, by default scope will take function
 def setup():
     print("setting  the browser")
     #return "chrome"

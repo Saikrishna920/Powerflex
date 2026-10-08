@@ -23,3 +23,8 @@ def test_videorecording(playwright: Playwright):
 
     context.close()
     browser.close()
+
+
+#Note: There are two ways to open the trace.zip file: 1. through cli command: playwright show-trace trace.zip once we execute this command, it will open trace viewer window.
+
+# 2. playwright is provided one direct website: https://trace.playwright.dev/  here, we can directly  upload the trace.zip file to see the detailed report
